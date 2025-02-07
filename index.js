@@ -1,3 +1,7 @@
-const { createLogFileWithDate } = require("./functions");
+const { getListFiles, createLogFileWithDate } = require('./functions');
 
-createLogFileWithDate('logs');
+createLogFileWithDate('logs')
+
+
+// getListFiles('logs');
+// getListFiles('utils');

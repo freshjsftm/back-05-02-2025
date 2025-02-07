@@ -1,13 +1,5 @@
 const { rm, access } = require('fs/promises');
-
-async function fileExists(pathFile) {
-  try {
-    await access(pathFile);
-    return true;
-  } catch (error) {
-    return false;
-  }
-}
+const { fileExists } = require('./existsFile');
 
 async function rmFileAsync(pathFile) {
   try {
